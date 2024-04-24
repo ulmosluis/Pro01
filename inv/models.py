@@ -1,8 +1,8 @@
+# models.py for the 'inv' app
+
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
-# models.py for the 'inv' app
 class Category(models.Model):
     name = models.CharField()
     description = models.TextField()

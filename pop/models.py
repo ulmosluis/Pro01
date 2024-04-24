@@ -1,9 +1,8 @@
+# models.py for the 'pop' app
+
 from django.db import models
 from django.contrib.auth.models import User
 from inv.models import Product
-
-# Create your models here.
-# models.py for the 'pop' app
 
 class Supplier(models.Model):
     supplier_id = models.AutoField(primary_key=True)
