@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Order List</title>
+</head>
+<body>
+    <h1>Sales Order List</h1>
+    <ul>
+        {% for salesorder in salesorders %}
+        <li><a href="{% url 'salesorder_detail' salesorder.pk %}">Order {{ salesorder.order_id }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock List</title>
+</head>
+<body>
+    <h1>Stock List</h1>
+    <ul>
+        {% for stock in stocks %}
+        <li><a href="{% url 'stock_detail' stock.pk %}">{{ stock.product.product_name }} ({{ stock.quantity_in_stock }})</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

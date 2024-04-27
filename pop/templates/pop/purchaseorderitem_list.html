@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Order Item List</title>
+</head>
+<body>
+    <h1>Purchase Order Item List</h1>
+    <ul>
+        {% for purchaseorderitem in purchaseorderitems %}
+        <li>{{ purchaseorderitem.product.product_name }} ({{ purchaseorderitem.quantity_ordered }} units)</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

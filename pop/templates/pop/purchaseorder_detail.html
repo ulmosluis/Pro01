@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Order Detail</title>
+</head>
+<body>
+    <h1>Purchase Order Detail</h1>
+    <h2>Purchase Order {{ purchaseorder.purchase_order_id }}</h2>
+    <p>Order Date: {{ purchaseorder.order_date }}</p>
+    <p>Supplier: {{ purchaseorder.supplier.supplier_name }}</p>
+    <p>Created Date: {{ purchaseorder.createdDate }}</p>
+</body>
+</html>
